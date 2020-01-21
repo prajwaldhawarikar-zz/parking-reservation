@@ -5,7 +5,7 @@ class RequestParser:
         Parses request query strings args
         :param request: request object
         :param fields: list of dicts with keys - name:string, required:boolean, default:any, type:string
-        :return: dict with error, body fields - error will be true if input request object does meet the requirement
+        :return: dict with error, body fields - error will be true if input request object does not meet the requirement
         """
         result = {'error': True, 'body': {}}
         for field in fields:
